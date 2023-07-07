@@ -1,0 +1,74 @@
+
+-- 5.1
+with MEMBER MEASURES.[fatal or Serious] as sum
+(
+	{[Dim Casualty Severity].[Casualty Severity Key].&[1],[Dim Casualty Severity].[Casualty Severity Key].&[2]},
+	[Measures].[Fact Casualties Count]
+)
+MEMBER MEASURES.[fatal] as sum
+(
+	[Dim Casualty Severity].[Casualty Severity Key].&[1],
+	[Measures].[Fact Casualties Count]
+)
+MEMBER MEASURES.[Serious] as sum
+(
+	[Dim Casualty Severity].[Casualty Severity Key].&[2],
+	[Measures].[Fact Casualties Count]
+)
+MEMBER MEASURES.[Slight] as sum
+(
+	[Dim Casualty Severity].[Casualty Severity Key].&[3],
+	[Measures].[Fact Casualties Count]
+)
+MEMBER MEASURES.[All] as sum
+(
+	[Dim Casualty Severity].[Casualty Severity Key],
+	[Measures].[Fact Casualties Count]
+)
+select {MEASURES.[fatal],MEASURES.[Serious],MEASURES.[fatal or Serious],MEASURES.[Slight],MEASURES.[All]} on 0,[Dim Local Authority District].[LAD Label].[LAD Label] on 1
+from [UK Accidents DDS];
+
+-- 5.2
+SELECT NON EMPTY CROSSJOIN([Dim Date].[Calendar].[Calendar Year],[Dim Date].[Calendar Quarter].[Calendar Quarter]) on columns, 
+NON EMPTY CROSSJOIN([Dim Local Authority District].[LAD Label].[LAD Label],[Dim Casualty Severity].[Casualty Severity Label].[Casualty Severity Label]) on rows
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Casualties Count];
+
+-- 5.3
+SELECT NON EMPTY CROSSJOIN(CROSSJOIN({[Dim Gender].[Gender Label].[Gender Label]-[Dim Gender].[Gender Label].&[Data missing or out of range]},[Dim Casualty Type].[Casualty Type Label].[Casualty Type Label]),{[Dim Age Band].[Age Band Label].[Age Band Label],[Dim Age Band].[Age Band Label]}) on rows,
+NON EMPTY [Dim Date].[Calendar Year].[Calendar Year] on columns
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Casualties Count];
+
+-- 5.4
+SELECT NON EMPTY CROSSJOIN([Dim Time Of Day].[Time Of Day Label].[Time Of Day Label],[Dim Accident Severity].[Accident Severity Label].[Accident Severity Label]) on rows,
+NON EMPTY [Dim Date].[Calendar Year].[Calendar Year] on columns
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Accidents Count];
+
+-- 5.5
+SELECT NON EMPTY CROSSJOIN([Dim Road Type].[Road Type Label].[Road Type Label],[Dim Accident Severity].[Accident Severity Label].[Accident Severity Label]) on rows,
+NON EMPTY CROSSJOIN([Dim Date].[Calendar Year].[Calendar Year],[Dim Urban Rural].[Urban Or Rural Label].[Urban Or Rural Label]) on columns
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Accidents Count];
+
+-- 5.6
+SELECT NON EMPTY CROSSJOIN([Dim Casualty Type].[Casualty Type Label].[Casualty Type Label], {[Dim Age Group].[Age Group Label].[Age Group Label],[Dim Age Group].[Age Group Label]}) on rows,
+NON EMPTY CROSSJOIN([Dim Date].[Calendar Year].[Calendar Year],[Dim Casualty Severity].[Casualty Severity Label].[Casualty Severity Label]) on columns
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Casualties Count];
+
+-- 5.7
+SELECT NON EMPTY {[Dim Journey Purpose].[Journey Purpose Label].[Journey Purpose Label],[Dim Journey Purpose].[Journey Purpose Label]} on  columns,
+NON EMPTY {[Dim Vehicle Type].[Vehicle Type Label].[Vehicle Type Label],[Dim Vehicle Type].[Vehicle Type Label]} on rows
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Vehicles Count];
+
+-- 5.8
+SELECT NON EMPTY CROSSJOIN([Dim Vehicle Type].[Vehicle Type Label].[Vehicle Type Label],[Dim Accident Severity].[Accident Severity Label].[Accident Severity Label]) on rows,
+NON EMPTY CROSSJOIN([Dim Date].[Calendar Year].[Calendar Year],[Dim Built Up Road].[Built Up Road Label].[Built Up Road Label]) on columns
+FROM [UK Accidents DDS]
+WHERE [Measures].[Fact Vehicles Count];
+
+
+

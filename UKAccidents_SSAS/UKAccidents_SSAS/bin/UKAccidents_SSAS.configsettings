@@ -1,0 +1,97 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>UK Accidents DDS</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=UKAccidentsDDS</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">dieuh</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Date</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Urban Rural</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Time Of Day</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Road Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Accident Severity</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Age Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Age Band</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Casualty Severity</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Local Authority District</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Gender</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Casualty Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Built Up Road</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Journey Purpose</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Vehicle Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Town City</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>UK Accidents DDS</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Accidents</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Accidents</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Casualties</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Casualties</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Vehicles</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Vehicles</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
