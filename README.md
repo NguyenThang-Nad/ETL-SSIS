@@ -77,14 +77,13 @@ Create Cube:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/ecadec56-9c50-4b14-9c26-346f1cea8fea)
 
 
-DMX to query:
-
+### DMX to query:
+Report the number of casualties by Severity (Fatal, Serious, Slight) in the Local Authority Districts over years
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/82e026ad-dc8a-4a86-a803-6e9e52961920)
 Result:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/a426e84b-49b3-4653-9d25-c39f9b3e0fbe)
-Report using Power BI:
-
+### Report using Power BI:
 Perform the statistical analysis of the number of casualties by Severity (Fatal, Serious, Slight) in different Local Authorities (Local_Authority_(District)) across all years
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d1e570e3-6a74-4a7f-b1c2-fd7f38808bde)
 Perform the statistical analysis of the number of casualties by Severity in different Local Authorities (Local_Authority_(District)) for each Quarter (Quý) within each year
