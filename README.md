@@ -48,12 +48,16 @@ The package for this process is named "SourceStagePackage." In this stage, data 
 # ETL NDS to Data Warehouse:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/5879a6b7-3b1f-4c0d-b692-d046002c582a)
 
+
 Dim table ETL:
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/3614b438-73ea-4aa4-a506-e00364dcfa5c)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/00f9b5f0-aa70-4b57-aa7d-8e540dcdf64f)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d4284827-6d68-4204-857b-cd24d591893a)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/bd0608fb-026a-4c31-9026-4ae6838f6c92)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/996ec637-07dd-4664-ac05-88bbeff5ccf6)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4fc432d7-c68a-44f0-974d-4f8a06e696c7)
 
+
 Fact tanle ETL:
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
 
 ## SSAS process:
@@ -61,14 +65,21 @@ Data Source connect:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/6362afb9-682e-417f-87fb-f559fa023891)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/35908b53-5005-4b6a-b0b1-e5f9cc5bfd6c)
 
+
 Data Source View:
+
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/e9ecabfc-bfd6-4454-a363-ee89f8f85933)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/aa8c1a26-0f42-4983-9f07-966ba84770c2)
 
 Create Cube:
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/ecadec56-9c50-4b14-9c26-346f1cea8fea)
 
+
 DMX to query:
+
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/82e026ad-dc8a-4a86-a803-6e9e52961920)
 Result:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/a426e84b-49b3-4653-9d25-c39f9b3e0fbe)
