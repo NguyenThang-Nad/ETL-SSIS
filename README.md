@@ -13,7 +13,8 @@ UK – Postcodes Data:
 Data Source: https://github.com/academe/UK-Postcodes/blob/master/postcodes.csv
 Overview: The "UK – Postcodes" dataset contains information about postcodes, corresponding geographic areas, geographical coordinates, cities or administrative regions, and other related attributes pertaining to postcodes in the United Kingdom.
 ##  Supporting Tools
-Visual Studio 2019/2022 with integrated SSIS (SQL Server Integration Services) and SSAS (SQL Server Analysis Services).
+Visual Studio 2019/2022 with integrated SSIS (SQL Server Integration Services) 
+SSAS (SQL Server Analysis Services)
 SQL Server Management Studio, SQL Server 2019.
 Power BI.
 # Data Warehouse:
@@ -22,7 +23,51 @@ Power BI.
 ### Constellation Schema
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/1f2a41f7-9579-47ce-bd2d-e9fa9b7b4af2)
 # SSIS (SQL Server Integration Services) Process:
-##
+## ETL Source to Stage
+"Source to Stage" is the process of moving data from the original data sources (Source) to a Staging Area.
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/003932d4-8e92-4b30-be63-7921b81eda41)
+
+### ETL process:
+The package for this process is named "SourceStagePackage." In this stage, data is extracted from the Source and loaded into the Staging Area.
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/26119b87-3c29-447c-b6db-f2f2c5fbae6b)
+#### Control Flow:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/200e86c0-76f3-4e2f-8f7a-15cdbe702394)
+#### Accidents Data Flow:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/e2c6accd-f8f1-46e4-a0c1-adcaa3d08ebf)
+#### Vehicles, Casualties Data Flow:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4c587e6e-e521-400b-876a-a66784c1b59c)
+#### Casualties
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/8f5dc151-9721-4208-9f76-09b4783b9529)
+## ETL Stage to NDS:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/1af17c41-f2de-45d9-97d6-4cab84190742)
+### ETL process (examples):
+#### Master
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/84a8344b-6456-4096-ba3b-4cf6bad8efca)
+#### Stage
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/dd99899c-c7b1-4e86-a616-d9e4adc16d06)
+# ETL NDS to Data Warehouse:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/5879a6b7-3b1f-4c0d-b692-d046002c582a)
+Dim table ETL:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/3614b438-73ea-4aa4-a506-e00364dcfa5c)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/00f9b5f0-aa70-4b57-aa7d-8e540dcdf64f)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d4284827-6d68-4204-857b-cd24d591893a)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/bd0608fb-026a-4c31-9026-4ae6838f6c92)
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/996ec637-07dd-4664-ac05-88bbeff5ccf6)
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4fc432d7-c68a-44f0-974d-4f8a06e696c7)
+Fact tanle ETL:
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
