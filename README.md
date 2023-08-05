@@ -61,18 +61,18 @@ The package for this process is named "SourceStagePackage." In this stage, data 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
 
 ## SSAS process:
-Data Source connect:
+#### Data Source connect:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/6362afb9-682e-417f-87fb-f559fa023891)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/35908b53-5005-4b6a-b0b1-e5f9cc5bfd6c)
 
 
-Data Source View:
+#### Data Source View:
 
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/e9ecabfc-bfd6-4454-a363-ee89f8f85933)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/aa8c1a26-0f42-4983-9f07-966ba84770c2)
 
-Create Cube:
+#### Create Cube:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/ecadec56-9c50-4b14-9c26-346f1cea8fea)
 
