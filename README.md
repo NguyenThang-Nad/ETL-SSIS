@@ -49,14 +49,14 @@ The package for this process is named "SourceStagePackage." In this stage, data 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/5879a6b7-3b1f-4c0d-b692-d046002c582a)
 
 
-Dim table ETL:
+#### Dim table ETL:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/3614b438-73ea-4aa4-a506-e00364dcfa5c)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/00f9b5f0-aa70-4b57-aa7d-8e540dcdf64f)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d4284827-6d68-4204-857b-cd24d591893a)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/bd0608fb-026a-4c31-9026-4ae6838f6c92)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/996ec637-07dd-4664-ac05-88bbeff5ccf6)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4fc432d7-c68a-44f0-974d-4f8a06e696c7)
 
 
-Fact tanle ETL:
+#### Fact tanle ETL:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
 
@@ -83,6 +83,10 @@ Report the number of casualties by Severity (Fatal, Serious, Slight) in the Loca
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/82e026ad-dc8a-4a86-a803-6e9e52961920)
 Result:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/a426e84b-49b3-4653-9d25-c39f9b3e0fbe)
+
+Report the number of casualties by Severity (Fatal, Serious, Slight) in the Local Authority Districts by Quarter in years
+![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/f19e41e2-966b-44f3-b58c-42c9e53aa64c)
+
 ### Report using Power BI:
 Perform the statistical analysis of the number of casualties by Severity (Fatal, Serious, Slight) in different Local Authorities (Local_Authority_(District)) across all years
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d1e570e3-6a74-4a7f-b1c2-fd7f38808bde)
@@ -91,7 +95,6 @@ Perform the statistical analysis of the number of casualties by Severity in diff
 
 Perform the statistical analysis of the number of casualties by Severity, Casualty Type, and Age Group for each year
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/50153e1b-32aa-4141-b34f-7ef8989c83ef)
-
 
 
 
