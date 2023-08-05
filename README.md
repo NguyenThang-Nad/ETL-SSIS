@@ -89,11 +89,23 @@ Report the number of casualties by Severity (Fatal, Serious, Slight) in the Loca
 
 ### Report using Power BI:
 Perform the statistical analysis of the number of casualties by Severity (Fatal, Serious, Slight) in different Local Authorities (Local_Authority_(District)) across all years
+
+
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d1e570e3-6a74-4a7f-b1c2-fd7f38808bde)
+
+
+
 Perform the statistical analysis of the number of casualties by Severity in different Local Authorities (Local_Authority_(District)) for each Quarter (Quý) within each year
+
+
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/f20507a0-d707-412f-9319-c0023017a55e)
 
 Perform the statistical analysis of the number of casualties by Severity, Casualty Type, and Age Group for each year
+
+
+
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/50153e1b-32aa-4141-b34f-7ef8989c83ef)
 
 
