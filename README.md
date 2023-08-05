@@ -45,18 +45,18 @@ The package for this process is named "SourceStagePackage." In this stage, data 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/84a8344b-6456-4096-ba3b-4cf6bad8efca)
 #### Stage
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/dd99899c-c7b1-4e86-a616-d9e4adc16d06)
-# ETL NDS to Data Warehouse:
+## ETL NDS to Data Warehouse:
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/5879a6b7-3b1f-4c0d-b692-d046002c582a)
 
 
-#### Dim table ETL:
+### Dim table ETL:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/3614b438-73ea-4aa4-a506-e00364dcfa5c)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/00f9b5f0-aa70-4b57-aa7d-8e540dcdf64f)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/d4284827-6d68-4204-857b-cd24d591893a)![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/bd0608fb-026a-4c31-9026-4ae6838f6c92)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/996ec637-07dd-4664-ac05-88bbeff5ccf6)
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4fc432d7-c68a-44f0-974d-4f8a06e696c7)
 
 
-#### Fact table ETL:
+### Fact table ETL:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
 
