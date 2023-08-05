@@ -56,7 +56,7 @@ The package for this process is named "SourceStagePackage." In this stage, data 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/4fc432d7-c68a-44f0-974d-4f8a06e696c7)
 
 
-#### Fact tanle ETL:
+#### Fact table ETL:
 
 ![image](https://github.com/NguyenThang-Nad/ETL-SSIS/assets/136436998/caab32e6-f9ff-4ebb-a21b-185e95366323)
 
